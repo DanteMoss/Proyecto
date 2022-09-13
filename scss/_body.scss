@@ -1,0 +1,444 @@
+// variables
+$FontFrank: "Frank Ruhl Libre", serif;
+$FontHeveltica: Arial, Helvetica, sans-serif;
+$colorblack: black;
+$colorwhite: white;
+
+
+
+$colores: (
+  colorcard: #ffc069,
+  titleform: #5a5a6e,
+  hovertr: #369681
+);
+
+
+body {
+  .locate {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+  }
+  
+
+  .formulario {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+
+  .titulo_catalogo {
+    text-align: center;
+    font-family: "Kaisei Decol", serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+  }
+  .subtitulo_catalogo {
+    text-align: center;
+    font-family: $FontFrank;
+    text-transform: uppercase;
+    color: $colorblack;
+  }
+
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: auto auto auto;
+  }
+
+  .contenido_principal {
+    font-size: 3rem;
+  }
+
+  .contenido_catalogos {
+    font-size: 2rem;
+  }
+
+  .index_text {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .texto_index {
+    font-size: 5rem;
+    font-family: $FontHeveltica;
+    text-align: center;
+  }
+
+  .titulo_tabla {
+    @extend .texto_index;
+  }
+  .subtitulo_tabla {
+    @extend .texto_index;
+    font-size: 2rem;
+  }
+
+  .locate {
+    font-size: 1rem;
+    font-family: $FontHeveltica;
+    text-transform: lowercase;
+  }
+  .contenido_localidad {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .mensaje_superior {
+    width: 100%;
+    display: grid;
+    text-align: center;
+    font-family: $FontHeveltica;
+    background-color: $colorblack;
+    color: $colorwhite;
+    min-height: 10px;
+    box-sizing: border-box;
+    font-size: 17px;
+    translate: top;
+    height: 8%;
+  }
+
+  .metodos_pagos {
+    text-align: center;
+    gap: 3rem;
+  }
+
+  //   /*Tarjetas de productos para compra */
+  & {
+    background: white;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    width: 100%;
+  }
+
+  .product-card {
+    width: 80%;
+    margin: 50px auto;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
+  }
+
+  .product-card .img-product {
+    position: relative;
+    margin: 0px;
+  }
+  .product-card .img-product img {
+    width: 100%;
+  }
+  .product-card .img-product .whishlist {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: map-get( $colores,colorcard );
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  .product-card .info-product {
+    padding: 0px 25px;
+  }
+  .product-card .info-product .title-product {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #131313;
+  }
+  .product-card .info-product .description {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #414141;
+  }
+  .product-card .info-product .price {
+    background: map-get($colores, colorcard);
+    padding: 8px 10px;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  .btn-cart {
+    background: #131313;
+    color: #ffffff;
+    padding: 10px 0px;
+    margin-top: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+  }
+  //   /* fin tarjetas de producto para compra */
+
+  //   /* formulario nuevo */
+
+  .form {
+    width: 440px;
+    height: 440px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    margin: calc(20vh - 120px) auto;
+  }
+  .titulo_formulario {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color: map-get( $colores, titleform );
+    border-bottom: 3px solid #78788c;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s;
+    border-bottom: 2px solid #bebed2;
+  }
+  input:focus {
+    border-bottom: 2px solid #78788c;
+  }
+  .p_formulario {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #5a5a5a;
+  }
+  button {
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  button:hover {
+    background: #78788c;
+    color: #fff;
+  }
+  .new_form {
+    content: "Hi";
+    position: absolute;
+    bottom: -15px;
+    right: -20px;
+    background: #50505a;
+    color: #fff;
+    width: 320px;
+    padding: 16px 4px 16px 0;
+    border-radius: 6px;
+    font-size: 13px;
+    box-shadow: 10px 10px 40px -14px #000;
+  }
+  span {
+    margin: 0 5px 0 15px;
+  }
+  .table-container {
+    width: 80%;
+    margin: 150px auto;
+  }
+
+  table {
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 20px;
+  }
+
+  thead {
+    background-color: #246355;
+    border-bottom: solid 5px #0f362d;
+    color: white;
+  }
+
+  tr:nth-child(even) {
+    background-color: #ddd;
+  }
+
+  tr:hover td {
+    background-color: map-get($colores, hovertr );
+    color: white;
+  }
+
+  //   /* INDEX */
+  @media only screen and (max-width: 768px) {
+    .productos {
+      display: flex;
+      width: 70%;
+      flex-direction: column;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: auto auto auto;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .menu_items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  //   /* media querie 1024px */
+  @media only screen and (max-width: 1024px) {
+    .productos {
+      display: flex;
+      width: 70%;
+      flex-direction: column;
+      margin-left: 6rem;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu_items {
+      display: flex;
+      flex-wrap: wrap;;
+    }
+  }
+
+  //   /* FIN INDEX */
+
+  //   /* ADULTOS */
+  @media only screen and (max-width: 768px) {
+    .productos {
+      display: flex;
+    }
+    .menu_items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  //   /* media querie 1024px */
+  @media only screen and (max-width: 1024px) {
+    .productos {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+    }
+    .menu_items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  //   /* FIN ADULTOS */
+
+  //   /* NIÑOS */
+  @media only screen and (max-width: 768px) {
+    .productos {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      margin-left: 11.5rem;
+      padding-right: 8rem;
+    }
+    .menu_items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  //   /* media querie 1024px */
+  @media only screen and (max-width: 1024px) {
+    .productos {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      margin-left: 16.5rem;
+    }
+
+    .menu_items {
+      display: flex;
+      flex-wrap: wrap; 
+    }
+  }
+  //   /* FIN NIÑOS */
+
+  //   /* NOSOTROS */
+  .gridContainerNosotros {
+    display: flex;
+  }
+  @media only screen and (max-width: 768px) {
+    .titulo_catalogo {
+      flex-direction: column;
+    }
+    .img_nosotros {
+      flex-direction: column;
+      justify-content: center;
+      height: 50rem;
+    }
+    .texto_nosotros {
+      flex-direction: column;
+    }
+    .cajas {
+      flex-direction: column;
+      gap: 5rem;
+    }
+    .cajauno h2 {
+      font-size: 3rem;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    .cajauno p {
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .titulo_nosotros {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  //  media querie 1024px
+  @media only screen and (max-width: 1024px) {
+    .titulo_catalogo {
+      flex-direction: column;
+    }
+    .img_nosotros {
+      flex-direction: column;
+      justify-content: center;
+      height: 50rem;
+    }
+    .texto_nosotros {
+      flex-direction: column;
+    }
+    .cajas {
+      flex-direction: column;
+      gap: 5rem;
+    }
+    .cajauno h2 {
+      font-size: 3rem;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    .cajauno p {
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .titulo_nosotros {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  //   FIN NOSOTROS
+
+  //    FIN medias queries
+}

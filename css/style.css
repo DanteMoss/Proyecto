@@ -5,163 +5,130 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
+
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
 
-.bgcolor {
-  background-color: white;
-  width: 100%;
-}
-/* principio de nav */
-.menu {
+header .menu {
   background-color: white;
   height: 75px;
   width: 100vw;
   display: grid;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid white;
-}
-.menu_items {
+  border-bottom: 1px solid white; }
+
+header .menu_items {
   display: flex;
   list-style-type: none;
-  margin-right: 30px;
-}
-.menu_items li:hover {
+  margin-right: 30px; }
+
+header .menu_items li:hover {
   border-radius: 3px;
   margin: 0 5px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  font-family: Arial, Helvetica, sans-serif; }
 
-.menu_items li a{
+header .menu_items li a {
   padding: 7px 13px;
   text-decoration: none;
   font-size: 18px;
   display: block;
   text-transform: uppercase;
-  color: black;
-}
-/* fin de navbar */
-.contenido_principal {
-  background-color: white;
-  color: black;
-}
-/* principio footer */
-footer {
-  background-color: white;
-}
+  color: black; }
 
-.footer_info {
+footer .footer_info {
   color: black;
   border-radius: 10px;
   margin: 0 5px;
   font-size: 1.5rem;
   text-align: center;
-  padding: 2rem;
-}
+  padding: 2rem; }
 
-.redes_pie {
+footer .redes_pie {
   display: flex;
   justify-content: center;
-  padding: 10px;
-}
+  padding: 10px; }
 
-.pie_pagina {
-  font-size: 2rem;
-}
+footer .pie_pagina {
+  font-size: 2rem; }
 
-.redes_pie a img {
+footer .redes_pie a img {
   height: 3rem;
   gap: 10rem;
   margin-right: 4rem;
-  margin-left: 4rem;
-}
+  margin-left: 4rem; }
 
-.info_footer {
+footer .info_footer {
   font-size: 12px;
   display: flex;
   justify-content: space-between;
-  margin: auto;
-}
-/* fin de footer */
+  margin: auto; }
 
-.locate {
+footer .footerContainer {
+  display: grid; }
+
+footer .metodos_pagos {
+  text-align: center;
+  gap: 3rem; }
+
+body .locate {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 50px;
-}
+  font-size: 50px; }
 
-.formulario {
+body .formulario {
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
+  text-align: center; }
 
-.titulo_catalogo {
+body .titulo_catalogo {
   text-align: center;
-  font-family: 'Kaisei Decol', serif;
+  font-family: "Kaisei Decol", serif;
   text-transform: uppercase;
-  font-size: 4rem;
-}
-.subtitulo_catalogo {
-  text-align: center;
-  font-family: 'Frank Ruhl Libre', serif;
-  text-transform: uppercase;
-  color: black;
-}
+  font-size: 4rem; }
 
-.productos{
+body .subtitulo_catalogo {
+  text-align: center;
+  font-family: "Frank Ruhl Libre", serif;
+  text-transform: uppercase;
+  color: black; }
+
+body .productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: auto auto auto;
-}
+  grid-template-areas: auto auto auto; }
 
-.contenido_principal {
-  font-size: 3rem;
-}
+body .contenido_principal {
+  font-size: 3rem; }
 
-.contenido_catalogos {
-  font-size: 2rem;
-}
+body .contenido_catalogos {
+  font-size: 2rem; }
 
-.index_text {
+body .index_text {
   text-align: center;
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
-.texto_index {
+body .texto_index, body .titulo_tabla, body .subtitulo_tabla {
   font-size: 5rem;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
+  text-align: center; }
 
-.titulo_tabla {
-  font-size: 5rem;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-.subtitulo_tabla {
-  font-size: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
+body .subtitulo_tabla {
+  font-size: 2rem; }
 
-.locate {
+body .locate {
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
-  text-transform: lowercase;
-}
-.contenido_localidad{
+  text-transform: lowercase; }
+
+body .contenido_localidad {
   text-align: center;
   font-size: 3rem;
   padding-top: 20px;
-  padding-bottom: 20px;
-}
+  padding-bottom: 20px; }
 
-.mensaje_superior {
+body .mensaje_superior {
   width: 100%;
   display: grid;
   text-align: center;
@@ -172,38 +139,33 @@ footer {
   box-sizing: border-box;
   font-size: 17px;
   translate: top;
-  height: 8%;
-}
+  height: 8%; }
 
-.metodos_pagos {
+body .metodos_pagos {
   text-align: center;
-  gap: 3rem;
-}
+  gap: 3rem; }
 
-/*Tarjetas de productos para compra */
 body {
   background: white;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  width: 100%;
-}
+  width: 100%; }
 
-.product-card {
+body .product-card {
   width: 80%;
   margin: 50px auto;
   background: #ffffff;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
-}
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45); }
 
-.product-card .img-product {
+body .product-card .img-product {
   position: relative;
-  margin: 0px;
-}
-.product-card .img-product img {
-  width: 100%;
-}
-.product-card .img-product .whishlist {
+  margin: 0px; }
+
+body .product-card .img-product img {
+  width: 100%; }
+
+body .product-card .img-product .whishlist {
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -212,32 +174,30 @@ body {
   height: 40px;
   padding: 8px;
   border-radius: 50%;
-  text-align: center;
-}
+  text-align: center; }
 
-.product-card .info-product {
-  padding: 0px 25px;
-}
-.product-card .info-product .title-product {
+body .product-card .info-product {
+  padding: 0px 25px; }
+
+body .product-card .info-product .title-product {
   font-size: 2rem;
   font-weight: 700;
-  color: #131313;
-}
-.product-card .info-product .description {
+  color: #131313; }
+
+body .product-card .info-product .description {
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 2rem;
-  color: #414141;
-}
-.product-card .info-product .price {
+  color: #414141; }
+
+body .product-card .info-product .price {
   background: #ffc069;
   padding: 8px 10px;
   border-radius: 30px;
   font-weight: 400;
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
-.btn-cart {
+body .btn-cart {
   background: #131313;
   color: #ffffff;
   padding: 10px 0px;
@@ -247,13 +207,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  font-size: 1.5rem;
-}
-/* fin tarjetas de producto para compra */
+  font-size: 1.5rem; }
 
-/* formulario nuevo */
-
-.form {
+body .form {
   width: 440px;
   height: 440px;
   background: #e6e6e6;
@@ -264,16 +220,16 @@ body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   position: relative;
-  margin: calc(20vh - 120px) auto;
-}
-.titulo_formulario {
+  margin: calc(20vh - 120px) auto; }
+
+body .titulo_formulario {
   margin: 10px 0;
   padding-bottom: 10px;
   width: 180px;
-  color: #78788c;
-  border-bottom: 3px solid #78788c;
-}
-input {
+  color: #5a5a6e;
+  border-bottom: 3px solid #78788c; }
+
+body input {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -283,19 +239,19 @@ input {
   border: 0;
   font-family: "Montserrat", sans-serif;
   transition: all 0.3s;
-  border-bottom: 2px solid #bebed2;
-}
-input:focus {
-  border-bottom: 2px solid #78788c;
-}
-.p_formulario {
+  border-bottom: 2px solid #bebed2; }
+
+body input:focus {
+  border-bottom: 2px solid #78788c; }
+
+body .p_formulario {
   content: attr(type);
   display: block;
   margin: 28px 0 0;
   font-size: 14px;
-  color: #5a5a5a;
-}
-button {
+  color: #5a5a5a; }
+
+body button {
   float: right;
   padding: 8px 12px;
   margin: 8px 0 0;
@@ -304,13 +260,13 @@ button {
   background: 0;
   color: #5a5a6e;
   cursor: pointer;
-  transition: all 0.3s;
-}
-button:hover {
+  transition: all 0.3s; }
+
+body button:hover {
   background: #78788c;
-  color: #fff;
-}
-.new_form {
+  color: #fff; }
+
+body .new_form {
   content: "Hi";
   position: absolute;
   bottom: -15px;
@@ -321,351 +277,246 @@ button:hover {
   padding: 16px 4px 16px 0;
   border-radius: 6px;
   font-size: 13px;
-  box-shadow: 10px 10px 40px -14px #000;
-}
-span {
-  margin: 0 5px 0 15px;
-}
+  box-shadow: 10px 10px 40px -14px #000; }
 
-/* fin de formulario nuevo */
+body span {
+  margin: 0 5px 0 15px; }
 
-.map_info {
-  display: flex;
-  justify-content: center;
-  margin-left: 490px;
-}
+body .table-container {
+  width: 80%;
+  margin: 150px auto; }
 
-/* inicio pagina Nosotros */
+body table {
+  background-color: white;
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%; }
 
-.texto_nosotros {
-  font-size: 20px;
-  margin: 30px;
-  font-family: 'Frank Ruhl Libre', serif;
-  display: grid;
-  justify-content: space-around;
-}
-.parrafo_nosotros {
-  display: grid;
-  text-align: center;
-  margin-right: 20px;
-  font-family: 'Frank Ruhl Libre', serif;
-  margin-bottom: 120px;
-}
-.titulo_nosotros {
-  display: grid;
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-family: 'Kaisei Decol', serif;
-  text-align: center;
-  margin-top: 120px;
-}
+body th,
+body td {
+  padding: 20px; }
 
-.img_nosotros {
-  display: flex;
-  justify-content: right;
-}
+body thead {
+  background-color: #246355;
+  border-bottom: solid 5px #0f362d;
+  color: white; }
 
-.texto_nosotros {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 18px;
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-.contenidoInferiorNosotros {
-  display: flex;
-  height: 9rem;
-  justify-content: space-around;
-}
-.titulos_nosotros {
-  display: flex;
-  justify-content: space-around;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-.informacion_nosotros {
-  display: flex;
-  justify-content: space-around;
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 15px;
-  font-weight: bold;
-}
-.cajas {
-  display: flex;
-  justify-content: space-around;
-  padding: 50px;
-}
+body tr:nth-child(even) {
+  background-color: #ddd; }
 
-.cajauno {
-  text-align: center;
-}
-.cajauno h2 {
-  font-size: 2rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
+body tr:hover td {
+  background-color: #369681;
+  color: white; }
 
-.cajauno p {
-  font-size: 2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* fin pagina nosotros */
-
-.gridContainerIndex {
-  display: grid;
-  grid-template-areas:
-    "mensaje_superior"
-    "logo"
-    "menu_items"
-    "productos"
-    "index_text"
-    "footerContainer";
-  grid-template-columns: 100%;
-  grid-template-rows: auto auto auto auto auto auto;
-}
-
-.footerContainer {
-  display: grid;
-}
-
-.gridContainerKids {
-  display: grid;
-  grid-template-areas:
-    "mensaje_superior"
-    "logo"
-    "menu_items"
-    "productos"
-    "productos"
-    "titulo_tabla"
-    "subtitulo_tabla"
-    "footer_container";
-}
-
-.gridContainerAdultos {
-  display: grid;
-  grid-template-areas:
-    "mensaje_superior"
-    "logo"
-    "menu_items"
-    "productos"
-    "productos"
-    "titulo_tabla"
-    "subtitulo_tabla"
-    "footer_container";
-}
-
-.gridContainerLocalidad {
-  display: grid;
-  grid-template-areas:
-    "mensaje_superior"
-    "logo"
-    "menu_items"
-    "titulo_catalogo"
-    "subtitulo catalogo"
-    "locate"
-    "map_info"
-    "titulo_catalogo";
-  grid-template-columns: 100%;
-  grid-template-rows: auto auto auto auto auto auto auto auto;
-}
-
-/* medias queries */
-
-/* INDEX */
 @media only screen and (max-width: 768px) {
-  .productos {
+  body .productos {
     display: flex;
     width: 70%;
     flex-direction: column;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: auto auto auto;
     justify-content: center;
-    align-items: center;
-    
-  }
-}
-.menu_items {
-  display: flex;
-  flex-wrap: wrap;
-}
+    align-items: center; } }
 
-/* media querie 1024px */
+body .menu_items {
+  display: flex;
+  flex-wrap: wrap; }
+
 @media only screen and (max-width: 1024px) {
-  .productos {
+  body .productos {
     display: flex;
     width: 70%;
     flex-direction: column;
     margin-left: 6rem;
     justify-content: center;
-    align-items: center;
-  }
-  .menu_items {
+    align-items: center; }
+  body .menu_items {
     display: flex;
-    flex-wrap: wrap;
-  }
-}
+    flex-wrap: wrap; } }
 
-/* FIN INDEX */
-
-/* ADULTOS */
 @media only screen and (max-width: 768px) {
-  .productos {
+  body .productos {
+    display: flex; }
+  body .menu_items {
     display: flex;
-  }
-  .menu_items {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-/* media querie 1024px */
+    flex-wrap: wrap; } }
+
 @media only screen and (max-width: 1024px) {
-  .productos {
+  body .productos {
     display: flex;
     flex-direction: column;
-    width: 70%;
-  }
-  .menu_items {
+    width: 70%; }
+  body .menu_items {
     display: flex;
-    flex-wrap: wrap;
-  }
-}
+    flex-wrap: wrap; } }
 
-/* FIN ADULTOS */
-
-/* NIÑOS */
 @media only screen and (max-width: 768px) {
-  .productos {
+  body .productos {
     display: flex;
     flex-direction: column;
     width: 70%;
     margin-left: 11.5rem;
-    padding-right: 8rem;
-  }
-  .menu_items {
+    padding-right: 8rem; }
+  body .menu_items {
     display: flex;
-    flex-wrap: wrap;
-  }
-}
-/* media querie 1024px */
+    flex-wrap: wrap; } }
+
 @media only screen and (max-width: 1024px) {
-  .productos {
+  body .productos {
     display: flex;
     flex-direction: column;
     width: 70%;
-    margin-left: 16.5rem;
-  }
-
-  .menu_items {
+    margin-left: 16.5rem; }
+  body .menu_items {
     display: flex;
-    flex-wrap: wrap;
-  }
-}
-/* FIN NIÑOS */
+    flex-wrap: wrap; } }
 
-/* NOSOTROS */
-.gridContainerNosotros {
-  display: flex;
-}
+body .gridContainerNosotros {
+  display: flex; }
+
 @media only screen and (max-width: 768px) {
-  .titulo_catalogo {
-    flex-direction: column;
-  }
-  .img_nosotros {
+  body .titulo_catalogo {
+    flex-direction: column; }
+  body .img_nosotros {
     flex-direction: column;
     justify-content: center;
-    height: 50rem;
-  }
-  .texto_nosotros {
+    height: 50rem; }
+  body .texto_nosotros {
+    flex-direction: column; }
+  body .cajas {
     flex-direction: column;
-  }
-  .cajas {
-    flex-direction: column;
-    gap: 5rem;
-  }
-  .cajauno h2 {
+    gap: 5rem; }
+  body .cajauno h2 {
     font-size: 3rem;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-  }
-  .cajauno p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  body .cajauno p {
     font-size: 2rem;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  .titulo_nosotros {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  body .titulo_nosotros {
     padding: 0;
-    margin: 0;
-  }
-}
-/* media querie 1024px */
+    margin: 0; } }
+
 @media only screen and (max-width: 1024px) {
-  .titulo_catalogo {
-    flex-direction: column;
-  }
-  .img_nosotros {
+  body .titulo_catalogo {
+    flex-direction: column; }
+  body .img_nosotros {
     flex-direction: column;
     justify-content: center;
-    height: 50rem;
-  }
-  .texto_nosotros {
+    height: 50rem; }
+  body .texto_nosotros {
+    flex-direction: column; }
+  body .cajas {
     flex-direction: column;
-  }
-  .cajas {
-    flex-direction: column;
-    gap: 5rem;
-  }
-  .cajauno h2 {
+    gap: 5rem; }
+  body .cajauno h2 {
     font-size: 3rem;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-  }
-  .cajauno p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  body .cajauno p {
     font-size: 2rem;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  .titulo_nosotros {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  body .titulo_nosotros {
     padding: 0;
-    margin: 0;
-  }
-}
-/* FIN NOSOTROS */
+    margin: 0; } }
 
-/* FIN medias queries */
+body .map_info {
+  display: flex;
+  justify-content: center;
+  margin-left: 490px; }
 
-/* tabla de talles */
+body .texto_nosotros {
+  font-size: 20px;
+  margin: 30px;
+  font-family: "Frank Ruhl Libre", serif;
+  display: grid;
+  justify-content: space-around; }
 
-.table-container {
-  width: 80%;
-  margin: 150px auto;
-}
+body .parrafo_nosotros {
+  display: grid;
+  text-align: center;
+  margin-right: 20px;
+  font-family: "Frank Ruhl Libre", serif;
+  margin-bottom: 120px; }
 
-table {
-  background-color: white;
-  text-align: left;
-  border-collapse: collapse;
-  width: 100%;
-}
+body .titulo_nosotros {
+  display: grid;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: "Kaisei Decol", serif;
+  text-align: center;
+  margin-top: 120px; }
 
-th,
-td {
-  padding: 20px;
-}
+body .img_nosotros {
+  display: flex;
+  justify-content: right; }
 
-thead {
-  background-color: #246355;
-  border-bottom: solid 5px #0f362d;
-  color: white;
-}
+body .texto_nosotros {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box; }
 
-tr:nth-child(even) {
-  background-color: #ddd;
-}
+body .contenidoInferiorNosotros {
+  display: flex;
+  height: 9rem;
+  justify-content: space-around; }
 
-tr:hover td {
-  background-color: #369681;
-  color: white;
-}
+body .titulos_nosotros {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+  font-weight: bold; }
+  body .titulos_nosotros {
+    font-family: "Frank Ruhl Libre", serif; }
+
+body .informacion_nosotros {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+  font-weight: bold; }
+  body .informacion_nosotros {
+    font-family: "Frank Ruhl Libre", serif; }
+
+body .cajas {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px; }
+
+body .cajauno {
+  text-align: center; }
+
+body .cajauno h2 {
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+
+body .cajauno p {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.gridContainerIndex {
+  display: grid;
+  grid-template-areas: "mensaje_superior" "logo" "menu_items" "productos" "index_text" "footerContainer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto auto; }
+
+.footerContainer {
+  display: grid; }
+
+.gridContainerKids {
+  display: grid;
+  grid-template-areas: "mensaje_superior" "logo" "menu_items" "productos" "productos" "titulo_tabla" "subtitulo_tabla" "footer_container"; }
+
+.gridContainerAdultos {
+  display: grid;
+  grid-template-areas: "mensaje_superior" "logo" "menu_items" "productos" "productos" "titulo_tabla" "subtitulo_tabla" "footer_container"; }
+
+.gridContainerLocalidad {
+  display: grid;
+  grid-template-areas: "mensaje_superior" "logo" "menu_items" "titulo_catalogo" "subtitulo catalogo" "locate" "map_info" "titulo_catalogo";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto auto auto auto; }

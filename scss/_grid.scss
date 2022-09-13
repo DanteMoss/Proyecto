@@ -1,0 +1,60 @@
+// variables
+
+
+.gridContainerIndex {
+  display: grid;
+  grid-template-areas:
+    "mensaje_superior"
+    "logo"
+    "menu_items"
+    "productos"
+    "index_text"
+    "footerContainer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto auto;
+}
+
+.footerContainer {
+  display: grid;
+}
+
+.gridContainerKids {
+  display: grid;
+  grid-template-areas:
+    "mensaje_superior"
+    "logo"
+    "menu_items"
+    "productos"
+    "productos"
+    "titulo_tabla"
+    "subtitulo_tabla"
+    "footer_container";
+}
+
+.gridContainerAdultos {
+  display: grid;
+  grid-template-areas:
+    "mensaje_superior"
+    "logo"
+    "menu_items"
+    "productos"
+    "productos"
+    "titulo_tabla"
+    "subtitulo_tabla"
+    "footer_container";
+}
+
+.gridContainerLocalidad {
+  display: grid;
+  grid-template-areas:
+    "mensaje_superior"
+    "logo"
+    "menu_items"
+    "titulo_catalogo"
+    "subtitulo catalogo"
+    "locate"
+    "map_info"
+    "titulo_catalogo";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+}
