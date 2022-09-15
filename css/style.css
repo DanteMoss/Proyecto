@@ -137,7 +137,16 @@ body .contenido_localidad {
   text-align: center;
   font-size: 3rem;
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  font-family: "Frank Ruhl Libre", serif; }
+
+body .texto_localidad {
+  text-align: center;
+  font-family: "Frank Ruhl Libre", serif; }
+
+body .gif_localidad {
+  align-items: center;
+  margin-left: 90rem; }
 
 body .mensaje_superior {
   width: 100%;

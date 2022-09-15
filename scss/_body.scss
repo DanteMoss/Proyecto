@@ -4,14 +4,11 @@ $FontHeveltica: Arial, Helvetica, sans-serif;
 $colorblack: black;
 $colorwhite: white;
 
-
-
 $colores: (
   colorcard: #ffc069,
   titleform: #5a5a6e,
-  hovertr: #369681
+  hovertr: #369681,
 );
-
 
 body {
   .locate {
@@ -19,7 +16,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
   }
-  
 
   .formulario {
     font-family: Arial, Helvetica, sans-serif;
@@ -82,6 +78,15 @@ body {
     font-size: 3rem;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: $FontFrank;
+  }
+  .texto_localidad {
+    text-align: center;
+    font-family: $FontFrank;
+  }
+  .gif_localidad {
+    align-items: center;
+    margin-left: 90rem;
   }
 
   .mensaje_superior {
@@ -130,7 +135,7 @@ body {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background: map-get( $colores,colorcard );
+    background: map-get($colores, colorcard);
     width: 40px;
     height: 40px;
     padding: 8px;
@@ -193,7 +198,7 @@ body {
     margin: 10px 0;
     padding-bottom: 10px;
     width: 180px;
-    color: map-get( $colores, titleform );
+    color: map-get($colores, titleform);
     border-bottom: 3px solid #78788c;
   }
   input {
@@ -277,7 +282,7 @@ body {
   }
 
   tr:hover td {
-    background-color: map-get($colores, hovertr );
+    background-color: map-get($colores, hovertr);
     color: white;
   }
 
@@ -310,7 +315,7 @@ body {
     }
     .menu_items {
       display: flex;
-      flex-wrap: wrap;;
+      flex-wrap: wrap;
     }
   }
 
@@ -366,7 +371,7 @@ body {
 
     .menu_items {
       display: flex;
-      flex-wrap: wrap; 
+      flex-wrap: wrap;
     }
   }
   //   /* FIN NIÑOS */
