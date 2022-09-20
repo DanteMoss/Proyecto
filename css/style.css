@@ -144,10 +144,9 @@ body .texto_localidad {
   text-align: center;
   font-family: "Frank Ruhl Libre", serif; }
 
-.gif_localidad {
-    display: flex;
-    justify-content: center;
-  }
+body .gif_localidad {
+  align-items: center;
+  margin-left: 90rem; }
 
 body .mensaje_superior {
   width: 100%;
@@ -409,8 +408,7 @@ body .gridContainerNosotros {
     gap: 5rem; }
   body .cajauno h2 {
     font-size: 3rem;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
- sans-serif; }
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
   body .cajauno p {
     font-size: 2rem;
     font-weight: bold;
@@ -433,8 +431,7 @@ body .gridContainerNosotros {
     gap: 5rem; }
   body .cajauno h2 {
     font-size: 3rem;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
- sans-serif; }
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
   body .cajauno p {
     font-size: 2rem;
     font-weight: bold;
@@ -442,6 +439,36 @@ body .gridContainerNosotros {
   body .titulo_nosotros {
     padding: 0;
     margin: 0; } }
+
+@media only screen and (max-width: 560px) {
+  body .productos {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: auto auto auto;
+    justify-content: center;
+    align-items: center; }
+  body .menu_items {
+    display: flex;
+    flex-wrap: wrap; }
+  body .mensaje_superior {
+    width: 100%; } }
+
+@media only screen and (max-width: 412px) {
+  body .productos {
+    display: flex;
+    width: 150%;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: auto auto auto;
+    justify-content: center;
+    align-items: center; }
+  body .menu_items {
+    display: flex;
+    flex-wrap: wrap; }
+  body .mensaje_superior {
+    width: 100%; } }
 
 body .map_info {
   display: flex;
@@ -515,8 +542,7 @@ body .cajauno {
 
 body .cajauno h2 {
   font-size: 2rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
- sans-serif; }
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
 
 body .cajauno p {
   font-size: 2rem;
@@ -524,12 +550,7 @@ body .cajauno p {
 
 .gridContainerIndex {
   display: grid;
-  grid-template-areas: "mensaje_superior"
- "logo"
- "menu_items"
- "productos"
- "index_text"
- "footerContainer";
+  grid-template-areas: "mensaje_superior" "logo" "menu_items" "productos" "index_text" "footerContainer";
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto auto auto auto; }
 
@@ -538,35 +559,14 @@ body .cajauno p {
 
 .gridContainerKids {
   display: grid;
-  grid-template-areas: "mensaje_superior"
- "logo"
- "menu_items"
- "productos"
- "productos"
- "titulo_tabla"
- "subtitulo_tabla"
- "footer_container"; }
+  grid-template-areas: "mensaje_superior" "logo" "menu_items" "productos" "productos" "titulo_tabla" "subtitulo_tabla" "footer_container"; }
 
 .gridContainerAdultos {
   display: grid;
-  grid-template-areas: "mensaje_superior"
- "logo"
- "menu_items"
- "productos"
- "productos"
- "titulo_tabla"
- "subtitulo_tabla"
- "footer_container"; }
+  grid-template-areas: "mensaje_superior" "logo" "menu_items" "productos" "productos" "titulo_tabla" "subtitulo_tabla" "footer_container"; }
 
 .gridContainerLocalidad {
   display: grid;
-  grid-template-areas: "mensaje_superior"
- "logo"
- "menu_items"
- "titulo_catalogo"
- "subtitulo catalogo"
- "locate"
- "map_info"
- "titulo_catalogo";
+  grid-template-areas: "mensaje_superior" "logo" "menu_items" "titulo_catalogo" "subtitulo catalogo" "locate" "map_info" "titulo_catalogo";
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto auto auto auto auto auto; }

@@ -445,5 +445,48 @@ body {
   }
   //   FIN NOSOTROS
 
+  @media only screen and (max-width: 560px) {
+    .productos {
+      display: flex;
+      width: 90%;
+      flex-direction: column;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: auto auto auto;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .menu_items{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .mensaje_superior{
+      width: 100%;
+    }
+  } 
+  @media only screen and (max-width: 412px) {
+    .productos {
+      display: flex;
+      width: 150%;
+      flex-direction: column;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: auto auto auto;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .menu_items{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .mensaje_superior{
+      width: 100%;
+    }
+    
+  } 
+  
+  
+  
+  
   //    FIN medias queries
 }
