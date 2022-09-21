@@ -43,10 +43,12 @@ body {
 
   .contenido_principal {
     font-size: 3rem;
+    position: relative;
   }
 
   .contenido_catalogos {
     font-size: 2rem;
+    
   }
 
   .index_text {
@@ -352,7 +354,6 @@ body {
       display: flex;
       flex-direction: column;
       width: 65%;
-      margin-left: 11.5rem;
       padding-right: 8rem;
     }
     .menu_items {
@@ -366,7 +367,8 @@ body {
       display: flex;
       flex-direction: column;
       width: 67%;
-      margin-left: 16.5rem;
+      justify-content: center;
+      align-items: center;
     }
 
     .menu_items {
@@ -463,11 +465,14 @@ body {
     .mensaje_superior{
       width: 100%;
     }
+    .contenido_catalogos{
+      align-items: center;
+    }
   } 
   @media only screen and (max-width: 412px) {
     .productos {
       display: flex;
-      width: 150%;
+      width: 90%;
       flex-direction: column;
       grid-template-columns: repeat(3, 1fr);
       grid-template-areas: auto auto auto;
@@ -482,6 +487,10 @@ body {
     .mensaje_superior{
       width: 100%;
     }
+    .contenido_catalogos{
+      align-items: center;
+    }
+    overflow-x: hidden;
     
   } 
   
