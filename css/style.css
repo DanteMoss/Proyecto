@@ -5,11 +5,13 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 header .menu {
   background-color: white;
@@ -18,17 +20,20 @@ header .menu {
   display: grid;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid white;
+}
 
 header .menu_items {
   display: flex;
   list-style-type: none;
-  margin-right: 30px; }
+  margin-right: 30px;
+}
 
 header .menu_items li:hover {
   border-radius: 3px;
   margin: 0 5px;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 header .menu_items li a {
   padding: 7px 13px;
@@ -36,7 +41,8 @@ header .menu_items li a {
   font-size: 18px;
   display: block;
   text-transform: uppercase;
-  color: black; }
+  color: black;
+}
 
 header a {
   text-decoration: none;
@@ -44,10 +50,13 @@ header a {
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
-  transition: background-size .3s; }
+  transition: background-size 0.3s;
+}
 
-header a:hover, header a:focus {
-  background-size: 100% 2px; }
+header a:hover,
+header a:focus {
+  background-size: 100% 2px;
+}
 
 footer .footer_info {
   color: black;
@@ -55,98 +64,122 @@ footer .footer_info {
   margin: 0 5px;
   font-size: 1.5rem;
   text-align: center;
-  padding: 2rem; }
+  padding: 2rem;
+}
 
 footer .redes_pie {
   display: flex;
   justify-content: center;
-  padding: 10px; }
+  padding: 10px;
+}
 
 footer .pie_pagina {
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 footer .redes_pie a img {
   height: 3rem;
   gap: 10rem;
   margin-right: 4rem;
-  margin-left: 4rem; }
+  margin-left: 4rem;
+}
 
 footer .info_footer {
   font-size: 12px;
   display: flex;
   justify-content: space-between;
-  margin: auto; }
+  margin: auto;
+}
 
 footer .footerContainer {
-  display: grid; }
+  display: grid;
+}
 
 footer .metodos_pagos {
   text-align: center;
-  gap: 3rem; }
+  gap: 3rem;
+}
 
 body .locate {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 50px; }
+  font-size: 50px;
+}
 
 body .formulario {
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center; }
+  text-align: center;
+}
 
 body .titulo_catalogo {
   text-align: center;
   font-family: "Kaisei Decol", serif;
   text-transform: uppercase;
-  font-size: 4rem; }
+  font-size: 4rem;
+}
 
 body .subtitulo_catalogo {
   text-align: center;
   font-family: "Frank Ruhl Libre", serif;
   text-transform: uppercase;
-  color: black; }
+  color: black;
+}
 
 body .productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: auto auto auto; }
+  grid-template-areas: auto auto auto;
+}
 
 body .contenido_principal {
-  font-size: 3rem; }
+  font-size: 3rem;
+}
 
 body .contenido_catalogos {
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 body .index_text {
   text-align: center;
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
-body .texto_index, body .titulo_tabla, body .subtitulo_tabla {
+body .texto_index,
+body .titulo_tabla,
+body .subtitulo_tabla {
   font-size: 5rem;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center; }
+  text-align: center;
+}
 
 body .subtitulo_tabla {
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 body .locate {
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+}
 
 body .contenido_localidad {
   text-align: center;
   font-size: 3rem;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-family: "Frank Ruhl Libre", serif; }
+  font-family: "Frank Ruhl Libre", serif;
+}
 
 body .texto_localidad {
   text-align: center;
-  font-family: "Frank Ruhl Libre", serif; }
+  font-family: "Frank Ruhl Libre", serif;
+}
 
 body .gif_localidad {
   align-items: center;
-  margin-left: 90rem; }
+  display: flex;
+  justify-content: center;
+}
 
 body .mensaje_superior {
   width: 100%;
@@ -159,31 +192,37 @@ body .mensaje_superior {
   box-sizing: border-box;
   font-size: 17px;
   translate: top;
-  height: 8%; }
+  height: 8%;
+}
 
 body .metodos_pagos {
   text-align: center;
-  gap: 3rem; }
+  gap: 3rem;
+}
 
 body {
   background: white;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  width: 100%; }
+  width: 100%;
+}
 
 body .product-card {
   width: 80%;
   margin: 50px auto;
   background: #ffffff;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45); }
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
+}
 
 body .product-card .img-product {
   position: relative;
-  margin: 0px; }
+  margin: 0px;
+}
 
 body .product-card .img-product img {
-  width: 100%; }
+  width: 100%;
+}
 
 body .product-card .img-product .whishlist {
   position: absolute;
@@ -194,28 +233,33 @@ body .product-card .img-product .whishlist {
   height: 40px;
   padding: 8px;
   border-radius: 50%;
-  text-align: center; }
+  text-align: center;
+}
 
 body .product-card .info-product {
-  padding: 0px 25px; }
+  padding: 0px 25px;
+}
 
 body .product-card .info-product .title-product {
   font-size: 2rem;
   font-weight: 700;
-  color: #131313; }
+  color: #131313;
+}
 
 body .product-card .info-product .description {
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 2rem;
-  color: #414141; }
+  color: #414141;
+}
 
 body .product-card .info-product .price {
   background: #ffc069;
   padding: 8px 10px;
   border-radius: 30px;
   font-weight: 400;
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 body .btn-cart {
   background: #131313;
@@ -227,7 +271,8 @@ body .btn-cart {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 body .form {
   width: 440px;
@@ -240,14 +285,16 @@ body .form {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   position: relative;
-  margin: calc(20vh - 120px) auto; }
+  margin: calc(20vh - 120px) auto;
+}
 
 body .titulo_formulario {
   margin: 10px 0;
   padding-bottom: 10px;
   width: 180px;
   color: #5a5a6e;
-  border-bottom: 3px solid #78788c; }
+  border-bottom: 3px solid #78788c;
+}
 
 body input {
   width: 100%;
@@ -259,17 +306,20 @@ body input {
   border: 0;
   font-family: "Montserrat", sans-serif;
   transition: all 0.3s;
-  border-bottom: 2px solid #bebed2; }
+  border-bottom: 2px solid #bebed2;
+}
 
 body input:focus {
-  border-bottom: 2px solid #78788c; }
+  border-bottom: 2px solid #78788c;
+}
 
 body .p_formulario {
   content: attr(type);
   display: block;
   margin: 28px 0 0;
   font-size: 14px;
-  color: #5a5a5a; }
+  color: #5a5a5a;
+}
 
 body button {
   float: right;
@@ -280,11 +330,13 @@ body button {
   background: 0;
   color: #5a5a6e;
   cursor: pointer;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+}
 
 body button:hover {
   background: #78788c;
-  color: #fff; }
+  color: #fff;
+}
 
 body .new_form {
   content: "Hi";
@@ -297,36 +349,44 @@ body .new_form {
   padding: 16px 4px 16px 0;
   border-radius: 6px;
   font-size: 13px;
-  box-shadow: 10px 10px 40px -14px #000; }
+  box-shadow: 10px 10px 40px -14px #000;
+}
 
 body span {
-  margin: 0 5px 0 15px; }
+  margin: 0 5px 0 15px;
+}
 
 body .table-container {
   width: 80%;
-  margin: 150px auto; }
+  margin: 150px auto;
+}
 
 body table {
   background-color: white;
   text-align: left;
   border-collapse: collapse;
-  width: 100%; }
+  width: 100%;
+}
 
 body th,
 body td {
-  padding: 20px; }
+  padding: 20px;
+}
 
 body thead {
   background-color: #246355;
   border-bottom: solid 5px #0f362d;
-  color: white; }
+  color: white;
+}
 
 body tr:nth-child(even) {
-  background-color: #ddd; }
+  background-color: #ddd;
+}
 
 body tr:hover td {
   background-color: #369681;
-  color: white; }
+  color: white;
+}
 
 @media only screen and (max-width: 768px) {
   body .productos {
@@ -336,11 +396,14 @@ body tr:hover td {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: auto auto auto;
     justify-content: center;
-    align-items: center; } }
+    align-items: center;
+  }
+}
 
 body .menu_items {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
 
 @media only screen and (max-width: 1024px) {
   body .productos {
@@ -349,26 +412,35 @@ body .menu_items {
     flex-direction: column;
     margin-left: 6rem;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+  }
   body .menu_items {
     display: flex;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   body .productos {
-    display: flex; }
+    display: flex;
+  }
   body .menu_items {
     display: flex;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   body .productos {
     display: flex;
     flex-direction: column;
-    width: 70%; }
+    width: 70%;
+  }
   body .menu_items {
     display: flex;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   body .productos {
@@ -376,69 +448,94 @@ body .menu_items {
     flex-direction: column;
     width: 65%;
     margin-left: 11.5rem;
-    padding-right: 8rem; }
+    padding-right: 8rem;
+  }
   body .menu_items {
     display: flex;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   body .productos {
     display: flex;
     flex-direction: column;
     width: 67%;
-    margin-left: 16.5rem; }
+    margin-left: 16.5rem;
+  }
   body .menu_items {
     display: flex;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap;
+  }
+}
 
 body .gridContainerNosotros {
-  display: flex; }
+  display: flex;
+}
 
 @media only screen and (max-width: 768px) {
   body .titulo_catalogo {
-    flex-direction: column; }
+    flex-direction: column;
+  }
   body .img_nosotros {
     flex-direction: column;
     justify-content: center;
-    height: 50rem; }
+    height: 50rem;
+  }
   body .texto_nosotros {
-    flex-direction: column; }
+    flex-direction: column;
+  }
   body .cajas {
     flex-direction: column;
-    gap: 5rem; }
+    gap: 5rem;
+  }
   body .cajauno h2 {
     font-size: 3rem;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
   body .cajauno p {
     font-size: 2rem;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
   body .titulo_nosotros {
     padding: 0;
-    margin: 0; } }
+    margin: 0;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   body .titulo_catalogo {
-    flex-direction: column; }
+    flex-direction: column;
+  }
   body .img_nosotros {
     flex-direction: column;
     justify-content: center;
-    height: 50rem; }
+    height: 50rem;
+  }
   body .texto_nosotros {
-    flex-direction: column; }
+    flex-direction: column;
+  }
   body .cajas {
     flex-direction: column;
-    gap: 5rem; }
+    gap: 5rem;
+  }
   body .cajauno h2 {
     font-size: 3rem;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
   body .cajauno p {
     font-size: 2rem;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
   body .titulo_nosotros {
     padding: 0;
-    margin: 0; } }
+    margin: 0;
+  }
+}
 
 @media only screen and (max-width: 560px) {
   body .productos {
@@ -448,12 +545,16 @@ body .gridContainerNosotros {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: auto auto auto;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+  }
   body .menu_items {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+  }
   body .mensaje_superior {
-    width: 100%; } }
+    width: 100%;
+  }
+}
 
 @media only screen and (max-width: 412px) {
   body .productos {
@@ -463,31 +564,38 @@ body .gridContainerNosotros {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: auto auto auto;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+  }
   body .menu_items {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+  }
   body .mensaje_superior {
-    width: 100%; } }
+    width: 100%;
+  }
+}
 
 body .map_info {
   display: flex;
   justify-content: center;
-  margin-left: 490px; }
+  margin-left: 490px;
+}
 
 body .texto_nosotros {
   font-size: 20px;
   margin: 30px;
   font-family: "Frank Ruhl Libre", serif;
   display: grid;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 body .parrafo_nosotros {
   display: grid;
   text-align: center;
   margin-right: 20px;
   font-family: "Frank Ruhl Libre", serif;
-  margin-bottom: 120px; }
+  margin-bottom: 120px;
+}
 
 body .titulo_nosotros {
   display: grid;
@@ -498,75 +606,122 @@ body .titulo_nosotros {
   margin-inline-end: 0px;
   font-family: "Kaisei Decol", serif;
   text-align: center;
-  margin-top: 120px; }
+  margin-top: 120px;
+}
 
 body .img_nosotros {
   display: flex;
-  justify-content: right; }
+  justify-content: right;
+}
 
 body .texto_nosotros {
   font-family: "Frank Ruhl Libre", serif;
   font-size: 18px;
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body .contenidoInferiorNosotros {
   display: flex;
   height: 9rem;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 body .titulos_nosotros {
   display: flex;
   justify-content: space-around;
   font-size: 1.5em;
-  font-weight: bold; }
-  body .titulos_nosotros {
-    font-family: "Frank Ruhl Libre", serif; }
+  font-weight: bold;
+}
+body .titulos_nosotros {
+  font-family: "Frank Ruhl Libre", serif;
+}
 
 body .informacion_nosotros {
   display: flex;
   justify-content: space-around;
   font-size: 1.5em;
-  font-weight: bold; }
-  body .informacion_nosotros {
-    font-family: "Frank Ruhl Libre", serif; }
+  font-weight: bold;
+}
+body .informacion_nosotros {
+  font-family: "Frank Ruhl Libre", serif;
+}
 
 body .cajas {
   display: flex;
   justify-content: space-around;
-  padding: 50px; }
+  padding: 50px;
+}
 
 body .cajauno {
-  text-align: center; }
+  text-align: center;
+}
 
 body .cajauno h2 {
   font-size: 2rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 
 body .cajauno p {
   font-size: 2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .gridContainerIndex {
   display: grid;
-  grid-template-areas: "mensaje_superior" "logo" "menu_items" "productos" "index_text" "footerContainer";
+  grid-template-areas:
+    "mensaje_superior"
+    "logo"
+    "menu_items"
+    "productos"
+    "index_text"
+    "footerContainer";
   grid-template-columns: 100%;
-  grid-template-rows: auto auto auto auto auto auto; }
+  grid-template-rows: auto auto auto auto auto auto;
+}
 
 .footerContainer {
-  display: grid; }
+  display: grid;
+}
 
 .gridContainerKids {
   display: grid;
-  grid-template-areas: "mensaje_superior" "logo" "menu_items" "productos" "productos" "titulo_tabla" "subtitulo_tabla" "footer_container"; }
+  grid-template-areas:
+    "mensaje_superior"
+    "logo"
+    "menu_items"
+    "productos"
+    "productos"
+    "titulo_tabla"
+    "subtitulo_tabla"
+    "footer_container";
+}
 
 .gridContainerAdultos {
   display: grid;
-  grid-template-areas: "mensaje_superior" "logo" "menu_items" "productos" "productos" "titulo_tabla" "subtitulo_tabla" "footer_container"; }
+  grid-template-areas:
+    "mensaje_superior"
+    "logo"
+    "menu_items"
+    "productos"
+    "productos"
+    "titulo_tabla"
+    "subtitulo_tabla"
+    "footer_container";
+}
 
 .gridContainerLocalidad {
   display: grid;
-  grid-template-areas: "mensaje_superior" "logo" "menu_items" "titulo_catalogo" "subtitulo catalogo" "locate" "map_info" "titulo_catalogo";
+  grid-template-areas:
+    "mensaje_superior"
+    "logo"
+    "menu_items"
+    "titulo_catalogo"
+    "subtitulo catalogo"
+    "locate"
+    "map_info"
+    "titulo_catalogo";
   grid-template-columns: 100%;
-  grid-template-rows: auto auto auto auto auto auto auto auto; }
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+}
