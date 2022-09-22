@@ -48,7 +48,6 @@ body {
 
   .contenido_catalogos {
     font-size: 2rem;
-    
   }
 
   .index_text {
@@ -311,7 +310,7 @@ body {
       display: flex;
       width: 70%;
       flex-direction: column;
-      margin-left: 6rem;
+
       justify-content: center;
       align-items: center;
     }
@@ -354,7 +353,7 @@ body {
       display: flex;
       flex-direction: column;
       width: 65%;
-      padding-right: 8rem;
+      justify-content: center;
     }
     .menu_items {
       display: flex;
@@ -374,6 +373,17 @@ body {
     .menu_items {
       display: flex;
       flex-wrap: wrap;
+    }
+    .contenido_catalogos {
+      display: grid;
+      align-content: center;
+    }
+    .product-card{
+      display: grid;
+      align-items: center;
+      align-content: center;
+      
+      
     }
   }
   //   /* FIN NIÑOS */
@@ -444,6 +454,9 @@ body {
       padding: 0;
       margin: 0;
     }
+    .gridContainerIndex {
+      align-items: center;
+    }
   }
   //   FIN NOSOTROS
 
@@ -456,46 +469,40 @@ body {
       grid-template-areas: auto auto auto;
       justify-content: center;
       align-items: center;
-      
     }
-    .menu_items{
+    .menu_items {
       display: flex;
       flex-wrap: wrap;
     }
-    .mensaje_superior{
+    .mensaje_superior {
       width: 100%;
     }
-    .contenido_catalogos{
+    .contenido_catalogos {
       align-items: center;
     }
-  } 
+  }
   @media only screen and (max-width: 412px) {
     .productos {
       display: flex;
-      width: 90%;
+      width: 97%;
       flex-direction: column;
       grid-template-columns: repeat(3, 1fr);
       grid-template-areas: auto auto auto;
       justify-content: center;
       align-items: center;
-      
     }
-    .menu_items{
+    .menu_items {
       display: flex;
       flex-wrap: wrap;
     }
-    .mensaje_superior{
+    .mensaje_superior {
       width: 100%;
     }
-    .contenido_catalogos{
+    overflow-x: hidden;
+    .contenido_catalogos {
       align-items: center;
     }
-    overflow-x: hidden;
-    
-  } 
-  
-  
-  
-  
+  }
+
   //    FIN medias queries
 }
