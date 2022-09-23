@@ -386,13 +386,16 @@ body .menu_items {
     flex-direction: column;
     width: 67%;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin: 0px auto;
+    width: 50%; }
   body .menu_items {
     display: flex;
     flex-wrap: wrap; }
   body .contenido_catalogos {
     display: grid;
-    align-content: center; }
+    align-content: center;
+    width: 100%; }
   body .product-card {
     display: grid;
     align-items: center;

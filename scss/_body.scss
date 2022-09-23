@@ -331,7 +331,6 @@ body {
       display: flex;
       flex-wrap: wrap;
     }
-  
   }
   //   /* media querie 1024px */
   @media only screen and (max-width: 1024px) {
@@ -344,6 +343,7 @@ body {
       display: flex;
       flex-wrap: wrap;
     }
+    
   }
 
   //   /* FIN ADULTOS */
@@ -369,6 +369,8 @@ body {
       width: 67%;
       justify-content: center;
       align-items: center;
+      margin: 0px auto;
+      width: 50%;
     }
 
     .menu_items {
@@ -378,13 +380,13 @@ body {
     .contenido_catalogos {
       display: grid;
       align-content: center;
+      width: 100%;
+      
     }
-    .product-card{
+    .product-card {
       display: grid;
       align-items: center;
       align-content: center;
-      
-      
     }
   }
   //   /* FIN NIÑOS */
