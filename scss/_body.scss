@@ -331,6 +331,10 @@ body {
       display: flex;
       flex-wrap: wrap;
     }
+    .menu{
+      display: flex;
+
+    }
   }
   //   /* media querie 1024px */
   @media only screen and (max-width: 1024px) {
@@ -497,6 +501,7 @@ body {
     .menu_items {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
     }
     .mensaje_superior {
       width: 100%;
@@ -505,6 +510,20 @@ body {
     .contenido_catalogos {
       align-items: center;
     }
+    .gridContainerIndex{
+      width: 100%;
+    }
+    .menu{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .img_logo{
+      display: flex;
+      justify-content: center;
+      height: 50%;
+    }
+    
   }
 
   //    FIN medias queries

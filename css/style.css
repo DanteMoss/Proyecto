@@ -359,7 +359,9 @@ body .menu_items {
     display: flex; }
   body .menu_items {
     display: flex;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  body .menu {
+    display: flex; } }
 
 @media only screen and (max-width: 1024px) {
   body .productos {
@@ -482,11 +484,22 @@ body .gridContainerNosotros {
       align-items: center; }
     body .menu_items {
       display: flex;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      justify-content: center; }
     body .mensaje_superior {
       width: 100%; }
     body .contenido_catalogos {
-      align-items: center; } }
+      align-items: center; }
+    body .gridContainerIndex {
+      width: 100%; }
+    body .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    body .img_logo {
+      display: flex;
+      justify-content: center;
+      height: 50%; } }
 
 body .map_info {
   display: flex;
@@ -588,3 +601,89 @@ body .cajauno p {
   grid-template-areas: "mensaje_superior" "logo" "menu_items" "titulo_catalogo" "subtitulo catalogo" "locate" "map_info" "titulo_catalogo";
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto auto auto auto auto auto; }
+
+@media only screen and (max-width: 412px) {
+  .locate {
+    display: flex;
+    justify-content: center; }
+  .horarios {
+    display: flex;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center; }
+  .horarios_parrafos {
+    text-align: center;
+    font-size: 8px;
+    padding-bottom: 25px; }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; } }
+
+@media only screen and (max-width: 768px) {
+  .locate {
+    display: flex;
+    justify-content: center; }
+  .horarios {
+    display: flex;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center; }
+  .horarios_parrafos {
+    display: flex;
+    font-size: 8px;
+    justify-content: center; } }
+
+@media only screen and (max-width: 1024px) {
+  .locate {
+    display: flex;
+    justify-content: center; }
+  .horarios {
+    display: flex;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center; }
+  .horarios_parrafos {
+    display: flex;
+    font-size: 8px;
+    justify-content: center; } }
+
+@media only screen and (max-width: 360px) {
+  .locate {
+    display: flex;
+    justify-content: center; }
+  .horarios {
+    display: flex;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center; }
+  .horarios_parrafos {
+    display: flex;
+    font-size: 8px;
+    justify-content: center; } }
+
+.locate {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px; }
+
+.map_info {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem; }
+
+.titulo-mapa {
+  font-size: 2rem;
+  text-align: center; }
+
+.horarios {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem; }
+
+.horarios_parrafos {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem; }
